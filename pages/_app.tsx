@@ -23,6 +23,7 @@ MyApp.getInitialProps = async ({ Component, ctx }: AppContext) => {
     pageProps = await Component.getInitialProps(ctx);
   }
 
+  await delay(5000);
   const res = await fetch('https://62453f937701ec8f724f2890.mockapi.io/menu');
   const menu = await res.json();
 
