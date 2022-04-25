@@ -2,6 +2,7 @@ import type { AppContext, AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
   console.log(pageProps.menu);
+  console.error('test');
 
   return (
     <>
